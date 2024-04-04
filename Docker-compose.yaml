@@ -2,9 +2,9 @@ version: "3.9"
 
 services:
   app:
-    build: 
+    build:
       context: .
-      args: 
+      args:
         - DEV=true
     ports:
       - "8000:8000"
