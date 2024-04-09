@@ -1,5 +1,5 @@
 """
-Test models.
+Test for models.
 """
 
 from django.test import TestCase
@@ -13,8 +13,8 @@ class ModelTests(TestCase):
         email = 'test@example.com'
         password = 'testpass123'
         user = get_user_model().objects.create_user(
-            email = email,
-            password = password,
+            email=email,
+            password=password,
         )
 
         self.assertEqual(user.email, email)
