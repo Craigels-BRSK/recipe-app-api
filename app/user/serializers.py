@@ -18,7 +18,7 @@ class UserSerializer(serializers.ModelSerializer):
         """Create and return a user with encrypted password."""
         return get_user_model().objects.create_user(**validated_data)
 
-class AuthToeknSerializer(serializers.Serializer):
+class AuthTokenSerializer(serializers.Serializer):
     """Serializer for the user auth token"""
 
     email = serializers.EmailField()
